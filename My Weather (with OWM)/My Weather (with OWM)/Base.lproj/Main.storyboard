@@ -823,11 +823,11 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N5d-m4-tsX">
-                                                    <rect key="frame" x="24" y="57" width="0.0" height="15"/>
+                                                    <rect key="frame" x="24" y="57.5" width="0.0" height="12"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="15" id="lXt-sK-goY"/>
+                                                        <constraint firstAttribute="height" constant="12" id="lXt-sK-goY"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -838,7 +838,7 @@
                                             <constraints>
                                                 <constraint firstItem="sRA-UL-Btv" firstAttribute="leading" secondItem="AMW-Ai-bqG" secondAttribute="leading" constant="24" id="BjT-vo-lnR"/>
                                                 <constraint firstItem="sRA-UL-Btv" firstAttribute="top" secondItem="AMW-Ai-bqG" secondAttribute="top" id="C22-Re-qKc"/>
-                                                <constraint firstAttribute="bottom" secondItem="N5d-m4-tsX" secondAttribute="bottom" id="C8t-aL-qra"/>
+                                                <constraint firstAttribute="bottom" secondItem="N5d-m4-tsX" secondAttribute="bottom" constant="2" id="C8t-aL-qra"/>
                                                 <constraint firstItem="4S0-19-zbg" firstAttribute="leading" secondItem="kHn-Kh-Zsm" secondAttribute="trailing" id="FZp-Xt-EzZ"/>
                                                 <constraint firstItem="4S0-19-zbg" firstAttribute="leading" secondItem="N5d-m4-tsX" secondAttribute="trailing" id="LJ6-0z-xXy"/>
                                                 <constraint firstItem="kHn-Kh-Zsm" firstAttribute="leading" secondItem="sRA-UL-Btv" secondAttribute="trailing" constant="-36" id="Nyi-yW-kk7"/>
