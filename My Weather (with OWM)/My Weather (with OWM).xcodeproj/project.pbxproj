@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		C40C2E4523B5457F0008539E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C40C2E4423B5457F0008539E /* CoreLocation.framework */; };
 		C426193A2381C89500661B47 /* PSCityInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = C42619392381C89500661B47 /* PSCityInfo.m */; };
-		C428C1EC2420F7170041CB81 /* NavigationArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = C428C1EB2420F7170041CB81 /* NavigationArrow.png */; };
+		C443EE68247174B100D31D1C /* NavigationArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = C443EE67247174B100D31D1C /* NavigationArrow.png */; };
 		C45A21BD238A9CAC00C85071 /* PSConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = C45A21BC238A9CAC00C85071 /* PSConstants.m */; };
 		C45A21C0238AA24100C85071 /* UIColor+PSCustomColors.m in Sources */ = {isa = PBXBuildFile; fileRef = C45A21BF238AA24100C85071 /* UIColor+PSCustomColors.m */; };
 		C45A21CC238AC67A00C85071 /* menu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C45A21CB238AC67900C85071 /* menu@2x.png */; };
@@ -59,7 +59,7 @@
 		C40C2E4423B5457F0008539E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		C42619382381C89500661B47 /* PSCityInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PSCityInfo.h; sourceTree = "<group>"; };
 		C42619392381C89500661B47 /* PSCityInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PSCityInfo.m; sourceTree = "<group>"; };
-		C428C1EB2420F7170041CB81 /* NavigationArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = NavigationArrow.png; path = ../../../../../Downloads/NavigationArrow.png; sourceTree = "<group>"; };
+		C443EE67247174B100D31D1C /* NavigationArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NavigationArrow.png; sourceTree = "<group>"; };
 		C45A21BB238A9CAC00C85071 /* PSConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PSConstants.h; sourceTree = "<group>"; };
 		C45A21BC238A9CAC00C85071 /* PSConstants.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PSConstants.m; sourceTree = "<group>"; };
 		C45A21BE238AA24100C85071 /* UIColor+PSCustomColors.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+PSCustomColors.h"; sourceTree = "<group>"; };
@@ -119,7 +119,7 @@
 		C45A21C3238ABE3E00C85071 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				C428C1EB2420F7170041CB81 /* NavigationArrow.png */,
+				C443EE67247174B100D31D1C /* NavigationArrow.png */,
 				C45A21CB238AC67900C85071 /* menu@2x.png */,
 			);
 			path = Images;
@@ -299,7 +299,7 @@
 				C47E7B692373332300820DFA /* LaunchScreen.storyboard in Resources */,
 				C45A21CC238AC67A00C85071 /* menu@2x.png in Resources */,
 				C47E7B662373332300820DFA /* Assets.xcassets in Resources */,
-				C428C1EC2420F7170041CB81 /* NavigationArrow.png in Resources */,
+				C443EE68247174B100D31D1C /* NavigationArrow.png in Resources */,
 				C47E7B642373332300820DFA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
