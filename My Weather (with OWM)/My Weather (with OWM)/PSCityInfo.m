@@ -289,19 +289,17 @@
                 littleCard.weatherImageView.image = image;
              
                 [littleCard.activityIndicator stopAnimating];
-                
-                CGPoint copyPoint = CGPointMake(littleCard.weatherImageView.frame.origin.x - 16, littleCard.weatherImageView.frame.origin.y - 16);
-                
+
                 [UIView animateWithDuration:0.5
                                       delay:0.3
                      usingSpringWithDamping:0.4
                       initialSpringVelocity:0.5
                                     options:UIViewAnimationOptionCurveEaseInOut
                                  animations:^{
-                                     [littleCard.view layoutIfNeeded];
-                                     CGRect frame = CGRectMake(copyPoint.x, copyPoint.y, 30, 30);
-                                     littleCard.weatherImageView.frame = frame;
-                                 }
+                    [littleCard.view layoutIfNeeded];
+                    CGRect frame = CGRectMake(littleCard.view.frame.size.width/2 - 15, littleCard.view.frame.size.height/2 - 15, 30, 30);
+                    littleCard.weatherImageView.frame = frame;
+                }
                                  completion:NULL];
             });
 
@@ -550,7 +548,8 @@
 
 - (NSString *)loadDataForSearchViewControllerWithCityName:(NSString *)cityName {
 
-    NSString *translatedCityNameOnEnglish = [self translateCityNameOnEnglish:cityName];
+    //NSString *translatedCityNameOnEnglish = [self translateCityNameOnEnglish:cityName]; Yandex translator doesn't work
+    NSString *translatedCityNameOnEnglish = cityName;
     
     NSString *findedCity = [[NSString alloc] init];
     

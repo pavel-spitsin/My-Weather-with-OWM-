@@ -21,6 +21,7 @@
 
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *mainBoardActivityIndicator;
 
+@property (weak, nonatomic) IBOutlet UIView *arrowContainerView;
 
 
 @property (strong, nonatomic) PSForecastViewController *forecastVC;

@@ -151,6 +151,7 @@
 
 - (IBAction)openSearchViewController:(UIBarButtonItem *)sender {
     PSSearchViewController *svc = [self.storyboard instantiateViewControllerWithIdentifier:@"PSSearchViewController"];
+    svc.modalPresentationStyle = UIModalPresentationFullScreen;
     svc.citiesArray = self.citiesArray;
     [self presentViewController:svc animated:YES completion:nil];
 }

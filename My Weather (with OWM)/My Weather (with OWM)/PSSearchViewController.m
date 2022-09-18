@@ -84,8 +84,9 @@
 }
 
 - (IBAction)addCity:(UIButton *)sender {
-    PSCityInfo *cityInfo = [[PSCityInfo alloc] init];
-    [self.citiesArray addObject:[cityInfo translateCityNameOnEnglish:self.searchBar.text]];
+    //PSCityInfo *cityInfo = [[PSCityInfo alloc] init];
+    //[self.citiesArray addObject:[cityInfo translateCityNameOnEnglish:self.searchBar.text]]; Yandex translator doesn't work
+    [self.citiesArray addObject:self.searchBar.text];
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 

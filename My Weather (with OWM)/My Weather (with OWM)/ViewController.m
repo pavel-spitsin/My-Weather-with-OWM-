@@ -49,26 +49,25 @@
         UIImage *arrowImage = [UIImage imageNamed:@"NavigationArrow.png"];
         self.arrowImageView = [[UIImageView alloc] initWithImage:arrowImage];
         
-        CGRect rect = CGRectMake(self.view.frame.size.width/2, self.cityLabel.frame.origin.y - 13, 0, 0);
+        CGRect rect = CGRectMake(self.arrowContainerView.frame.size.width/2, self.arrowContainerView.frame.size.height/2, 0, 0);
         self.arrowImageView.frame = rect;
         self.arrowImageView.alpha = 0.0;
         
-        [self.view addSubview:self.arrowImageView];
+        [self.arrowContainerView addSubview:self.arrowImageView];
         
         [UIView animateWithDuration:1.3 //1.8
-                              delay:0.5 //0.5
+                              delay:0.0//0.5 //0.5
              usingSpringWithDamping:0.5 //0.3
               initialSpringVelocity:0.2 //0.5
                             options:UIViewAnimationOptionCurveEaseInOut //0
                          animations:^{
-                             CGRect frame = CGRectMake(rect.origin.x - 13, rect.origin.y - 13, 26, 26);
-                             self.arrowImageView.frame = frame;
-                             self.arrowImageView.alpha = 1.0;
+            self.arrowImageView.frame = self.arrowContainerView.bounds;
+            self.arrowImageView.alpha = 1.0;
                              
-                             self.arrowImageView.transform = CGAffineTransformMakeRotation(0);
-                             self.arrowImageView.transform = CGAffineTransformMakeRotation(M_PI);
-                             self.arrowImageView.transform = CGAffineTransformMakeRotation(0);
-                         }
+            self.arrowImageView.transform = CGAffineTransformMakeRotation(0);
+            self.arrowImageView.transform = CGAffineTransformMakeRotation(M_PI);
+            self.arrowImageView.transform = CGAffineTransformMakeRotation(0);
+        }
                          completion:NULL];
     }
 

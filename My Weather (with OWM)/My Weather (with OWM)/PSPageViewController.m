@@ -160,6 +160,7 @@
 
 - (void)openCitiesTable {
     self.tableVC = [self.storyboard instantiateViewControllerWithIdentifier:@"PSViewControllerWithTableViewController"];
+    self.tableVC.modalPresentationStyle = UIModalPresentationFullScreen;
     self.tableVC.citiesArray = self.citiesArray;
     [self presentViewController:self.tableVC animated:YES completion:nil];
 }
