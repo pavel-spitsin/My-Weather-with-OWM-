@@ -30,12 +30,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    
     [self.addFoundCityButton setEnabled:NO];
-    
     [self.searchBar becomeFirstResponder];
-    
     self.activityIndicator.hidesWhenStopped = YES;
 }
 
@@ -62,7 +58,6 @@
     }
     
     [self.activityIndicator stopAnimating];
-
 }
 
 - (void)searchBarCancelButtonClicked:(UISearchBar *)searchBar {
@@ -79,13 +74,10 @@
 - (NSString *)searchDataForCity:(NSString *)cityName {
     PSCityInfo *cityInfo = [[PSCityInfo alloc] init];
     NSString *findedCity = [cityInfo loadDataForSearchViewControllerWithCityName:cityName];
-    
     return findedCity;
 }
 
 - (IBAction)addCity:(UIButton *)sender {
-    //PSCityInfo *cityInfo = [[PSCityInfo alloc] init];
-    //[self.citiesArray addObject:[cityInfo translateCityNameOnEnglish:self.searchBar.text]]; Yandex translator doesn't work
     [self.citiesArray addObject:self.searchBar.text];
     [self dismissViewControllerAnimated:YES completion:nil];
 }
