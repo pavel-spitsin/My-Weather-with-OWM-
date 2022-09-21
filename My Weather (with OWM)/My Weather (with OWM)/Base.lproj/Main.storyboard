@@ -926,7 +926,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <searchBar contentMode="redraw" placeholder="Enter city name" showsCancelButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LAd-1t-XIU">
+                            <searchBar contentMode="redraw" placeholder="Enter city name in english" showsCancelButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LAd-1t-XIU">
                                 <rect key="frame" x="0.0" y="44" width="414" height="56"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="56" id="AT7-1A-GnA"/>
